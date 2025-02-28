@@ -70,3 +70,62 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+        }
+        
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.05); }
+          100% { transform: scale(1); }
+        }
+        
+        @keyframes wiggle {
+          0% { transform: rotate(0deg); }
+          25% { transform: rotate(1deg); }
+          75% { transform: rotate(-1deg); }
+          100% { transform: rotate(0deg); }
+        }
+        
+        @keyframes shine {
+          from { background-position: -200% center; }
+          to { background-position: 200% center; }
+        }
+        
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+        
+        .animate-pulse-slow {
+          animation: pulse 4s ease-in-out infinite;
+        }
+        
+        .animate-wiggle {
+          animation: wiggle 2s ease-in-out infinite;
+        }
+        
+        .shine-effect {
+          background: linear-gradient(90deg, #3A2668 0%, #6c4cb8 25%, #9678da 50%, #6c4cb8 75%, #3A2668 100%);
+          background-size: 200% auto;
+          background-clip: text;
+          text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: shine 4s linear infinite;
+        }
+        
+        
+        
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
