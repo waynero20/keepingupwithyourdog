@@ -33,9 +33,8 @@ export default async function Home() {
           <div className="p-6 rounded-xl shadow-md hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 ">
             <h2 className="text-2xl font-semibold text-primary mb-3 shine-effect">Featured Story</h2>
             <p className="text-primary mb-4">
-              Meet Max, the golden retriever who learned to fetch the newspaper and everyone's hearts.
-              His journey from a playful puppy to a neighborhood hero is one you don't want to miss.
-            </p>
+              {`Meet Max, the golden retriever who learned to fetch the newspaper and everyone's hearts.
+              His journey from a playful puppy to a neighborhood hero is one you don't want to miss.`}</p>
             <Button className="bg-[#3A2668] hover:bg-purple-800 transition-all duration-300 text-white py-2 px-4 rounded-lg transform hover:scale-105">
               Read More
             </Button>
@@ -48,19 +47,19 @@ export default async function Home() {
             <ul className="text-primary space-y-2 mb-4">
               <li className="flex items-center">
                 <span className="inline-block w-2 h-2 bg-purple-300 rounded-full mr-2"></span>
-                The importance of regular vet check-ups
+                {"The importance of regular vet check-ups"}
               </li>
               <li className="flex items-center">
                 <span className="inline-block w-2 h-2 bg-purple-300 rounded-full mr-2"></span>
-                Nutritional needs for different breeds
+                {"Nutritional needs for different breeds"}
               </li>
               <li className="flex items-center">
                 <span className="inline-block w-2 h-2 bg-purple-300 rounded-full mr-2"></span>
-                Exercise routines for a happy, healthy pup
+                {"Exercise routines for a happy, healthy pup"}
               </li>
               <li className="flex items-center">
                 <span className="inline-block w-2 h-2 bg-purple-300 rounded-full mr-2"></span>
-                Grooming essentials for every dog owner
+                {"Grooming essentials for every dog owner"}
               </li>
             </ul>
             <Button className="bg-[#3A2668] hover:bg-purple-800 transition-all duration-300 text-white py-2 px-4 rounded-lg transform hover:scale-105">
@@ -107,7 +106,7 @@ export default async function Home() {
       <BlurFade delay={0.8} inView>
         <div className="mt-12 p-6 rounded-xl shadow-lg border border-purple-400/30">
           <h2 className="text-2xl font-semibold text-purple-100 mb-3 shine-effect">Subscribe to Keeping Up With your Dog</h2>
-          <p className="text-primary mb-4">Get weekly updates on dog care tips, heartwarming stories, and exclusive content.</p>
+          <p className="text-primary mb-4">{"Get weekly updates on dog care tips, heartwarming stories, and exclusive content."}</p>
           <div className="flex flex-col sm:flex-row gap-2">
             <Input
               type="email"
